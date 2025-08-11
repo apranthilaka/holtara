@@ -1,0 +1,126 @@
+.contentWrapper {
+    margin-top: 5%;
+    width: 1200px;
+    padding-bottom: 24px;
+    p {
+        color: rgb(105, 109, 136);
+    }
+}
+.profileImageContainer {
+    width: 150px;
+    img {
+        border-radius: 50%;
+    }
+}
+.projectsContainer {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(588px, 1fr));
+    gap: 24px;
+
+    &__project {
+        overflow: hidden;
+        width: 100%;
+        min-height: 489px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // margin-bottom: 50px;
+        border: 1px solid #333;
+        border: 1px solid #d5d5d5;
+        border-radius: 10px;
+
+        iframe {
+            border: 1px solid white;
+        }
+    }
+    &__projectHeading {
+        height: 118px;
+        font-size: 13px;
+        width: 100%;
+        padding: 12px 24px;
+        display: flex;
+        flex-direction: row;
+
+        p {
+            color: #858585;
+            height: 41px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            width: 100%;
+        }
+        a {
+            min-width: 200px;
+            display: flex;
+            color: black !important;
+        }
+    }
+    &__prototypeLink {
+        height: autopx;
+        font-size: 14px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #d5d5d5;
+        padding: 12px 24px;
+
+        span {
+            font-size: 12px;
+            font-weight: 600;
+            color: black;
+        }
+        span,
+        a {
+            font-size: 12px;
+        }
+        p {
+            font-size: 12px;
+            color: #333;
+        }
+    }
+}
+.myServicesContainer {
+    margin-top: 50px;
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: var(--gap);
+        margin-top: 1rem;
+    }
+    &__card {
+        padding: 32px;
+        border-radius: 10px;
+        border: 1px solid #cccccc;
+        background: #fcfdff;
+        border-radius: 10px;
+        ul {
+            margin: 0;
+            padding-left: 1.2rem;
+            color: var(--muted);
+            line-height: 1.5;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1rem;
+            margin: 0 0 16px 0;
+        }
+    }
+}
+
+.sectionTitle {
+    margin-top: 100px;
+    margin-bottom: 25px;
+    font-size: 5rem;
+}
+
+.myInformationContainer {
+    p {
+        max-width: 800px;
+    }
+}

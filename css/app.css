@@ -500,7 +500,6 @@ img {
   color: black !important;
 }
 .projectsContainer__prototypeLink {
-  height: autopx;
   font-size: 14px;
   width: 100%;
   display: flex;
@@ -521,6 +520,23 @@ img {
 .projectsContainer__prototypeLink p {
   font-size: 12px;
   color: #333;
+}
+.projectsContainer__prototypeLink a {
+  display: block;
+  height: 36px;
+  padding: 0 12px;
+  background-color: #4b98ff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  /* Smooth background color transition */
+  transition: background-color 0.2s ease;
+}
+.projectsContainer__prototypeLink a:hover {
+  text-decoration: none !important;
+  background-color: #3980dd;
 }
 
 .myServicesContainer {

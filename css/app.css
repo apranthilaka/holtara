@@ -342,10 +342,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Horizontal center */
-  align-items: center; /* Vertical center */
-  min-height: 100vh; /* Full viewport height */
-  background-color: rgb(245, 245, 245);
+  justify-content: flex-start;
+  /* Horizontal center */
+  align-items: center;
+  /* Vertical center */
+  min-height: 100vh;
+  /* Full viewport height */
+  background-color: rgb(247, 248, 250);
 }
 
 /* Base setup */
@@ -457,29 +460,134 @@ li {
 
 .contentWrapper {
   margin-top: 5%;
-  width: 1200px;
+  width: 100%;
   padding-bottom: 24px;
+  padding: 0 24px;
+  padding-bottom: 24px;
+  /* Small screens and above (sm) */
+  /* Medium screens and above (md) */
+  /* Large screens and above (lg) */
+  /* Extra large screens and above (xl) */
+  /* 2X extra large screens and above (2xl) */
+}
+@media (min-width: 640px) {
+  .contentWrapper {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .contentWrapper {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .contentWrapper {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .contentWrapper {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1536px) {
+  .contentWrapper {
+    max-width: 1200px;
+  }
 }
 .contentWrapper p {
   color: rgb(105, 109, 136);
 }
 
-.profileImageContainer {
-  width: 180px;
-}
-.profileImageContainer img {
-  border-radius: 50%;
+.heroSection {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
+.profileImageContainer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profileImageContainer img {
+  width: auto;
+  height: 198px;
+}
+
+.myInformationContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .myInformationContainer p {
   max-width: 800px;
+  text-align: center;
+}
+.myInformationContainer button {
+  width: 100px;
+  height: 40px;
+  margin-top: 12px;
+  border-radius: 4px;
+  border: none;
+  background-color: #4b98ff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+.myInformationContainer button:hover {
+  text-decoration: none !important;
+  background-color: #3980dd;
+  cursor: pointer;
 }
 
 .projectsContainer {
-  width: 1200px;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(588px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   gap: 24px;
+  /* Small screens and above (sm) */
+  /* Medium screens and above (md) */
+  /* Large screens and above (lg) */
+  /* Extra large screens and above (xl) */
+  /* 2X extra large screens and above (2xl) */
+}
+@media (min-width: 640px) {
+  .projectsContainer {
+    max-width: 640px;
+    grid-template-columns: repeat(auto-fit, minmax(640px, 1fr));
+  }
+}
+@media (min-width: 768px) {
+  .projectsContainer {
+    max-width: 768px;
+    grid-template-columns: repeat(auto-fit, minmax(640px, 1fr));
+  }
+}
+@media (min-width: 1024px) {
+  .projectsContainer {
+    max-width: 1024px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+}
+@media (min-width: 1280px) {
+  .projectsContainer {
+    max-width: 1280px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}
+@media (min-width: 1536px) {
+  .projectsContainer {
+    max-width: 1536px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
 }
 .projectsContainer__project {
   background-color: white;
@@ -502,8 +610,8 @@ li {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 .projectsContainer__projectHeading {
-  height: 113px;
-  font-size: 13px;
+  height: auto;
+  font-size: 14px;
   width: 100%;
   padding: 12px 24px;
   display: flex;
@@ -544,6 +652,7 @@ li {
   color: #333;
 }
 .projectsContainer__prototypeLink a {
+  min-width: 111px;
   display: block;
   height: 36px;
   padding: 0 12px;
@@ -561,16 +670,81 @@ li {
   background-color: #3980dd;
 }
 
+.myServicesContainer {
+  width: 100%;
+  /* Small screens and above (sm) */
+  /* Medium screens and above (md) */
+  /* Large screens and above (lg) */
+  /* Extra large screens and above (xl) */
+  /* 2X extra large screens and above (2xl) */
+}
+@media (min-width: 640px) {
+  .myServicesContainer {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .myServicesContainer {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .myServicesContainer {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .myServicesContainer {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1536px) {
+  .myServicesContainer {
+    max-width: 1200px;
+  }
+}
 .myServicesContainer__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: var(--gap);
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  gap: 24px;
+  width: 100%;
+  /* Small screens and above (sm) */
+  /* Medium screens and above (md) */
+  /* Large screens and above (lg) */
+  /* Extra large screens and above (xl) */
+  /* 2X extra large screens and above (2xl) */
+}
+@media (min-width: 640px) {
+  .myServicesContainer__grid {
+    grid-template-columns: repeat(auto-fit, minmax(640px, 1fr));
+  }
+}
+@media (min-width: 768px) {
+  .myServicesContainer__grid {
+    grid-template-columns: repeat(auto-fit, minmax(640px, 1fr));
+  }
+}
+@media (min-width: 1024px) {
+  .myServicesContainer__grid {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+}
+@media (min-width: 1280px) {
+  .myServicesContainer__grid {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}
+@media (min-width: 1536px) {
+  .myServicesContainer__grid {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
 }
 .myServicesContainer__card {
   padding: 32px;
   border-radius: 10px;
   background: #fcfdff;
   border-radius: 10px;
+  width: 100%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: box-shadow 0.2s ease;
 }
@@ -603,11 +777,12 @@ li {
   font-style: normal;
 }
 
-.mtInfoTitle {
+.myInfoTitle {
   margin-top: 20px;
+  text-align: center;
 }
-.mtInfoTitle h4 {
-  font-size: 2rem;
+.myInfoTitle h4 {
+  font-size: 1.5rem;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;

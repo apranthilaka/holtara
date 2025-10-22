@@ -13,15 +13,44 @@
     <body>
         <div class="contentWrapper">
             <div class="heroSection">
-                <div class="profileImageContainer">
-                    <!-- <img src="assets/GwfuBs7WcAAI1jj.jpeg" alt="" /> -->
+                <!-- <div class="profileImageContainer">
                     <img
                         src="assets/ed35f861be81be2548e514085fb19385.gif"
                         alt=""
                     />
-                </div>
+                </div> -->
                 <div class="myInfoTitle">
-                    <h4>Designs That Scales With Your Business</h4>
+                    <h4 id="animatedText">
+                        Designs That Scales With Your Business
+                    </h4>
+                    <script>
+                        const texts = [
+                            'Designs That Scales With Your Business',
+                            'Modern Challenges, Innovative Solutions',
+                            'Crafting User-Centric Experiences',
+                            'Transforming Ideas into Reality',
+                        ];
+                        let index = 0;
+
+                        function changeText() {
+                            const h4 = document.getElementById('animatedText');
+                            h4.style.opacity = 0; // Fade out
+                            setTimeout(() => {
+                                index = (index + 1) % texts.length;
+                                h4.textContent = texts[index];
+                                h4.style.opacity = 1; // Fade in
+                            }, 500); // Duration of fade out
+                        }
+
+                        setInterval(changeText, 6000); // Change text every 3 seconds
+                    </script>
+                    <style>
+                        #animatedText {
+                            opacity: 1;
+                            transition: opacity 0.5s ease;
+                        }
+                    </style>
+                    <!-- <h4>Designs That Scales With Your Business</h4> -->
                 </div>
                 <div class="myInformationContainer">
                     <p>
@@ -37,9 +66,7 @@
                 </button> -->
                 </div>
             </div>
-            <!-- <div class="sectionTitle">
-                <h4>Latest Projects - 2025</h4>
-            </div> -->
+
             <div class="projectsContainer">
                 <div class="projectsContainer__project">
                     <div class="projectsContainer__projectHeading">
@@ -183,10 +210,8 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="sectionTitle">
-                <h4>My Services</h4>
-            </div> -->
-            <div class="myServicesContainer">
+
+            <!-- <div class="myServicesContainer">
                 <div class="myServicesContainer__grid">
                     <section class="myServicesContainer__card">
                         <h2 id="ux-heading">Software Design Services</h2>
@@ -247,9 +272,6 @@
                         </ul>
                     </section>
                 </div>
-            </div>
-            <!-- <div class="sectionTitle">
-                <h4>More Projects</h4>
             </div> -->
         </div>
     </body>

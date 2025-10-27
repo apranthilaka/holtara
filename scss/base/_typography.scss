@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+
 
 /* Base setup */
 h1,
@@ -35,16 +38,22 @@ h3 {
 }
 
 h4 {
-    font-size: 1.214rem;
-    /* ~17px */
+    font-family: 'Inter', sans-serif;
+    margin: 1.2em 0 0.5em;
+    line-height: 1.3;
+
+    font-size: 22.4px;
     font-weight: 500;
-    /* Medium */
+    letter-spacing: -0.448px;
+    color: #2d3347 #2d3347
 }
 
 h5 {
     font-size: 1.071rem;
     /* ~15px */
     font-weight: 500;
+    margin-top: 0;
+    margin: 0;
 }
 
 h6 {
@@ -55,9 +64,15 @@ h6 {
 
 /* Headings */
 p {
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
     margin: 0.5em 0;
     line-height: 1.6;
-    color: #5a5d70;
+    color: #2d3347;
+    margin: 0;
+
 }
 
 a {

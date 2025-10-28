@@ -474,6 +474,7 @@ li {
   grid-template-rows: auto;
   overflow: hidden;
   width: 100%;
+  height: 100%;
 }
 
 .heroSection {
@@ -511,6 +512,41 @@ li {
   flex-direction: column;
   justify-content: flex-end;
 }
+.heroSection_aboutMe {
+  margin-bottom: 32px;
+}
+.heroSection_freelanceRates {
+  margin-bottom: 16px;
+  padding: 16px 20px;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 8px;
+}
+.heroSection_freelanceRates h5 {
+  margin-bottom: 2px;
+}
+.heroSection_contractRates {
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 8px;
+  padding: 16px 20px;
+}
+.heroSection_contractRates span {
+  font-size: 12px;
+  font-weight: 300;
+  display: block;
+  color: red;
+  background-color: rgba(240, 151, 151, 0.137);
+  padding: 4px 12px;
+  width: fit-content;
+  margin-bottom: 8px;
+  border: 1px solid red;
+  border-radius: 4px;
+}
+.heroSection_contractRates h5 {
+  margin-bottom: 2px;
+}
+.heroSection_contractRates p {
+  margin-bottom: 12px;
+}
 
 .projectsContainer {
   width: 100%;
@@ -524,16 +560,17 @@ li {
   background-color: #f5f6fa;
 }
 .projectsContainer__project {
-  background-color: white;
+  background-color: #eee;
   overflow: hidden;
   width: 100%;
-  min-height: 1024px;
+  min-height: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 12px;
+  /* 2X extra large screens and above (2xl) */
 }
 .projectsContainer__project iframe {
   border: none;
@@ -541,9 +578,30 @@ li {
 .projectsContainer__projectHeading {
   width: 100%;
   padding: 28px 32px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
 }
 .projectsContainer__projectHeading p {
   margin-top: 4px;
+}
+.projectsContainer__projectHeading a {
+  font-size: 12px;
+  display: block;
+  height: 40px;
+  padding: 0px 16px;
+  border: 1px solid rgb(193, 193, 201);
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  /* Smooth background color transition */
+  transition: background-color 0.2s ease;
+}
+.projectsContainer__projectHeading a:hover {
+  text-decoration: none !important;
+  background-color: #eeeeee;
 }
 .projectsContainer__prototypeLink {
   font-size: 14px;
@@ -563,6 +621,7 @@ li {
   color: #333;
 }
 .projectsContainer__prototypeLink a {
+  font-size: 12px;
   display: block;
   height: 40px;
   padding: 0px 16px;
